@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Adhoc">
+<test name ="RegressionOfChrome">
+<parameter name ="browser" value ="Chrome"></parameter>
+<parameter name ="wbsite" value ="https://www.homedepot.com"></parameter>
+<parameter name ="a" value ="murat@mail.com"></parameter>
+<parameter name ="b" value ="Qwer1234."></parameter>
+<parameter name ="c" value ="22181"></parameter>
+<parameter name ="d" value ="1235678908"></parameter>
+
+<classes>
+<class name ="PeopleNTech.Bootcamp.Homedepot"></class>
+</classes>
+</test>
+<test name ="RegressionOfEdge">
+<parameter name ="browser" value ="Edge"></parameter>
+<parameter name ="wbsite" value ="https://www.homedepot.com"></parameter>
+<parameter name ="a" value ="murat@mail.com"></parameter>
+<parameter name ="b" value ="Qwer1234."></parameter>
+<parameter name ="c" value ="22181"></parameter>
+<parameter name ="d" value ="1235678908"></parameter>
+<classes>
+<class name ="PeopleNTech.Bootcamp.Homedepot"></class>
+</classes>
+</test>
+</suite>

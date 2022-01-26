@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Adhoc]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="RegressionOfChrome(failed)">
+    <parameter name="a" value="murat@mail.com"/>
+    <parameter name="b" value="Qwer1234."/>
+    <parameter name="c" value="22181"/>
+    <parameter name="d" value="1235678908"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="wbsite" value="https://www.homedepot.com"/>
+    <classes>
+      <class name="PeopleNTech.Bootcamp.Homedepot">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="VerificationOfText" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- PeopleNTech.Bootcamp.Homedepot -->
+    </classes>
+  </test> <!-- RegressionOfChrome(failed) -->
+  <test thread-count="5" name="RegressionOfEdge(failed)">
+    <parameter name="a" value="murat@mail.com"/>
+    <parameter name="b" value="Qwer1234."/>
+    <parameter name="c" value="22181"/>
+    <parameter name="d" value="1235678908"/>
+    <parameter name="browser" value="Edge"/>
+    <parameter name="wbsite" value="https://www.homedepot.com"/>
+    <classes>
+      <class name="PeopleNTech.Bootcamp.Homedepot">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="VerificationOfText"/>
+        </methods>
+      </class> <!-- PeopleNTech.Bootcamp.Homedepot -->
+    </classes>
+  </test> <!-- RegressionOfEdge(failed) -->
+</suite> <!-- Failed suite [Adhoc] -->
