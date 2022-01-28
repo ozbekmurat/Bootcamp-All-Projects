@@ -30,7 +30,7 @@
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="VerificationOfText"/>
+          <include name="VerificationOfText" invocation-numbers="0"/>
         </methods>
       </class> <!-- PeopleNTech.Bootcamp.Homedepot -->
     </classes>

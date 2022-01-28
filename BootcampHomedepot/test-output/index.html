@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Adhoc" class="navigator-link ">
-                    <span>C:\Users\murat\eclipse-boothcamp\BootcampHomedepot\src\HomeDepot.xml</span>
+                    <span>C:\Users\murat\git\Bootcamp-All-Projects\BootcampHomedepot\src\HomeDepot.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,  1 skipped,  </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -107,21 +107,12 @@
                         <a href="#" panel-name="suite-Adhoc" title="PeopleNTech.Bootcamp.Homedepot" class="method navigator-link" hash-for-method="VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)">VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Adhoc -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Adhoc" class="hide-methods skipped suite-Adhoc"> (hide)</a> <!-- hide-methods skipped suite-Adhoc -->
-                      <a href="#" panel-name="suite-Adhoc" class="show-methods skipped suite-Adhoc"> (show)</a> <!-- show-methods skipped suite-Adhoc -->
-                    </span>
-                    <div class="method-list-content skipped suite-Adhoc">
                       <span>
-                        <img src="skipped.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Adhoc" title="PeopleNTech.Bootcamp.Homedepot" class="method navigator-link" hash-for-method="VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)">VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Adhoc -->
+                    </div> <!-- method-list-content failed suite-Adhoc -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -145,13 +136,48 @@
                   </a> <!-- VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908) -->
                   <span class="method-name">VerificationOfText</span>
                   <span class="parameters">(murat@mail.com, Qwer1234., 22181, 1235678908)</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains (text(),&apos;My Account&apos;)]&quot;}
   (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\murat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 09f99f7d9094ae72e00750f96eacdcc1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\murat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38f04b48e779fae24b2428f4af211756
+*** Element info: {Using=xpath, value=//*[contains (text(),&apos;My Account&apos;)]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at PageObjects.Home.MyToClick(Home.java:21)
+	at PeopleNTech.Bootcamp.Homedepot.VerificationOfText(Homedepot.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)">
+                  </a> <!-- VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908) -->
+                  <span class="method-name">VerificationOfText</span>
+                  <span class="parameters">(murat@mail.com, Qwer1234., 22181, 1235678908)</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: MicrosoftEdge=97.0.1072.69)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:52335}, msedge: {msedgedriverVersion: 96.0.1054.57 (37903eda6e60d..., userDataDir: C:\Users\murat\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 88ef3ec2bd5a5060959884d21a2cfe52
 *** Element info: {Using=xpath, value=//*[contains (text(),&apos;My Account&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -175,46 +201,10 @@ Session ID: 09f99f7d9094ae72e00750f96eacdcc1
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Adhoc-class-failed -->
-          <div class="suite-Adhoc-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">PeopleNTech.Bootcamp.Homedepot</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)">
-                  </a> <!-- VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908) -->
-                  <span class="method-name">VerificationOfText</span>
-                  <span class="parameters">(murat@mail.com, Qwer1234., 22181, 1235678908)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=97.0.1072.69)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56913}, msedge: {msedgedriverVersion: 96.0.1054.57 (37903eda6e60d..., userDataDir: C:\Users\murat\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ddc2984c7e22eef970d3f61a917debd2
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Common.Utility.beforeMethod(Utility.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Adhoc-class-skipped -->
         </div> <!-- panel Adhoc -->
         <div panel-name="test-xml-Adhoc" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\murat\eclipse-boothcamp\BootcampHomedepot\src\HomeDepot.xml</span>
+            <span class="header-content">C:\Users\murat\git\Bootcamp-All-Projects\BootcampHomedepot\src\HomeDepot.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -287,16 +277,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'VerificationOfText')
 data.setCell(0, 2, 'PeopleNTech.Bootcamp.Homedepot')
-data.setCell(0, 3, 14238);
+data.setCell(0, 3, 14182);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'VerificationOfText')
 data.setCell(1, 2, 'PeopleNTech.Bootcamp.Homedepot')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 2066);
 window.suiteTableData['Adhoc']= { tableData: data, tableDiv: 'times-div-Adhoc'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 seconds</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Adhoc">
               </div> <!-- times-div-Adhoc -->
             </div> <!-- times-div -->
@@ -331,25 +321,25 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)</span>
-                <span class="method-start">4730 ms</span>
+                <span class="method-start">2396 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">18975 ms</span>
+                <span class="method-start">4467 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">beforeMethod(Edge, https://www.homedepot.com)</span>
-                <span class="method-start">25142 ms</span>
+                <span class="method-start">10719 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">VerificationOfText(murat@mail.com, Qwer1234., 22181, 1235678908)</span>
-                <span class="method-start">29335 ms</span>
+                <span class="method-start">13663 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">29341 ms</span>
+                <span class="method-start">27852 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

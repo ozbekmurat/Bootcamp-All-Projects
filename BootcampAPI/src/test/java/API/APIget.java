@@ -27,7 +27,7 @@ public class APIget {
 		String converts = verifing.asString();
 		Assert.assertEquals(converts.contains("Funke"), true);
 		
-		File it = new File ("C:\\Users\\murat\\eclipse-boothcamp\\BootcampAPI\\Test.json");
+		File it = new File ("C:\\Users\\murat\\git\\Bootcamp-All-Projects\\BootcampAPI\\Test.json");
 		Response gt = given().contentType(ContentType.JSON).body(it).get("https://reqres.in/api/users");
 		gt.prettyPrint();
 	}

@@ -27,7 +27,7 @@ public class APIpost {
 		String converts = verifing.asString();
 		Assert.assertEquals(converts.contains("Tracey"), true);
 		
-		File it = new File ("C:\\Users\\murat\\eclipse-bootcamp\\BoothcampAPI\\Test.json");
+		File it = new File ("C:\\Users\\murat\\git\\Bootcamp-All-Projects\\BootcampAPI\\Test.json");
 		Response gt = given().contentType(ContentType.JSON).body(it).post("https://reqres.in/api/users");
 		gt.prettyPrint();
 	}

@@ -9,20 +9,21 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Adhoc</th></tr>
-<tr><td><a href="#t0">RegressionOfChrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">25,106</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">RegressionOfEdge</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">4,202</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">0</th><th class="num attn">1</th><th class="num">0</th><th class="num attn">1</th><th class="num">29,308</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">RegressionOfChrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,627</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">RegressionOfEdge</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">23,302</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">33,929</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Adhoc</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionOfChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m0">VerificationOfText</a></td><td rowspan="1">1643169563632</td><td rowspan="1">14238</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">RegressionOfEdge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m1">beforeMethod</a></td><td rowspan="1">1643169584044</td><td rowspan="1">4176</td></tr><tr><th colspan="4">RegressionOfEdge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m2">afterMethod</a></td><td rowspan="1">1643169588243</td><td rowspan="1">-1643169588243</td></tr><tr><th colspan="4">RegressionOfEdge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m3">VerificationOfText</a></td><td rowspan="1">1643169588237</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Adhoc</th></tr></tbody><tbody id="t0"><tr><th colspan="4">RegressionOfChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m0">VerificationOfText</a></td><td rowspan="1">1643336853651</td><td rowspan="1">2066</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">RegressionOfEdge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">PeopleNTech.Bootcamp.Homedepot</td><td><a href="#m1">VerificationOfText</a></td><td rowspan="1">1643336864918</td><td rowspan="1">14182</td></tr></tbody>
 </table>
-<h2>RegressionOfChrome</h2><h3 id="m0">PeopleNTech.Bootcamp.Homedepot#VerificationOfText</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>murat@mail.com</td><td>Qwer1234.</td><td>22181</td><td>1235678908</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
+<h2>RegressionOfChrome</h2><h3 id="m0">PeopleNTech.Bootcamp.Homedepot#VerificationOfText</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>murat@mail.com</td><td>Qwer1234.</td><td>22181</td><td>1235678908</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains (text(),&apos;My Account&apos;)]&quot;}
   (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\murat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:56775}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 09f99f7d9094ae72e00750f96eacdcc1
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 97.0.4692.71 (adefa7837d02a..., userDataDir: C:\Users\murat\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52277}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 38f04b48e779fae24b2428f4af211756
 *** Element info: {Using=xpath, value=//*[contains (text(),&apos;My Account&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
@@ -41,44 +42,30 @@ Session ID: 09f99f7d9094ae72e00750f96eacdcc1
 	at PeopleNTech.Bootcamp.Homedepot.VerificationOfText(Homedepot.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>RegressionOfEdge</h2><h3 id="m1">PeopleNTech.Bootcamp.Homedepot#beforeMethod</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Edge</td><td>https://www.homedepot.com</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+<h2>RegressionOfEdge</h2><h3 id="m1">PeopleNTech.Bootcamp.Homedepot#VerificationOfText</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>murat@mail.com</td><td>Qwer1234.</td><td>22181</td><td>1235678908</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: MicrosoftEdge=97.0.1072.69)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56913}, msedge: {msedgedriverVersion: 96.0.1054.57 (37903eda6e60d..., userDataDir: C:\Users\murat\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ddc2984c7e22eef970d3f61a917debd2
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:52335}, msedge: {msedgedriverVersion: 96.0.1054.57 (37903eda6e60d..., userDataDir: C:\Users\murat\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 88ef3ec2bd5a5060959884d21a2cfe52
+*** Element info: {Using=xpath, value=//*[contains (text(),&apos;My Account&apos;)]}
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Common.Utility.beforeMethod(Utility.java:33)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
+	at PageObjects.Home.MyToClick(Home.java:21)
+	at PeopleNTech.Bootcamp.Homedepot.VerificationOfText(Homedepot.java:37)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">PeopleNTech.Bootcamp.Homedepot#afterMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">PeopleNTech.Bootcamp.Homedepot#VerificationOfText</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th></tr><tr class="param stripe"><td>murat@mail.com</td><td>Qwer1234.</td><td>22181</td><td>1235678908</td></tr><tr><th colspan="4">Exception</th></tr><tr><td colspan="4"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: MicrosoftEdge=97.0.1072.69)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-RSL61MR&apos;, ip: &apos;192.168.1.161&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 97.0.1072.69, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:56913}, msedge: {msedgedriverVersion: 96.0.1054.57 (37903eda6e60d..., userDataDir: C:\Users\murat\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ddc2984c7e22eef970d3f61a917debd2
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Common.Utility.beforeMethod(Utility.java:33)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
